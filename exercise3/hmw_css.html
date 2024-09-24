@@ -2,21 +2,35 @@
 <html>
     <head> 
         <title>Learning CSS..ing</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap" rel="stylesheet">
         
         <style>
-        body {background-color: rgb(255, 244, 202);}
-        h1   {color: rgb(255, 89, 0);}
-        p    {color: rgb(54, 116, 50);}
-        body {font-family: "Edu Australia VIC WA NT Hand Dots",sans-serif;
-                font-variation-settings: 'wght' 400, 'wdth' 100;
-                
-                }
-        body {text-align:"center";}
-        .column {float:left;}
+      
+        h1 {
+            color: rgb(255, 89, 0);
+        }
+        p {
+            color: rgb(54, 116, 50);
+        }
+        body {
+            font-family: "Edu AU VIC WA NT Dots", sans-serif;
+            font-variation-settings: 'wght' 400, 'wdth' 100;
+            background-color: rgb(255, 244, 202);
+            text-align:"center";
+        }
+        
+        .column {
+            float:left;
+        }
+       .pink {
+            padding:30px;
+            border:double pink;
+        }
+        
         
         </style>
-        <link href:"https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap" rel:"stylesheet">
-        
 
     </head>
     
@@ -25,7 +39,6 @@
 
     <h1 style="text-align:center;">A Handmade Web: with CSS</h1>
         <body>
-       
             <p>
                 <em> The term 'handmade' usually refers to objects made by hand or by using simple tools rather
                 than machines. The result may be homely — as in a child's clay ashtray — or exquisite — as in
@@ -33,16 +46,14 @@
                 <br><br>
             </p>
             <div style="padding:30px;border:double pink;">
-
-            <p style="color:rgb(214, 0, 118);">
-               <em> <strong>I evoke the term 'handmade web' to refer to web pages coded by hand rather than by
-                software; web pages made and maintained by individuals rather than by businesses or
-                corporations; web pages which are provisional, temporary, or one-of-a-kind; web pages
-                which challenge conventions of reading, writing, design, ownership, privacy, security, or
-                identity.</strong> </em>
-            </p>
-        </div>
-
+                <p style="color:rgb(214, 0, 118);">
+                    <em> <strong>I evoke the term 'handmade web' to refer to web pages coded by hand rather than by
+                    software; web pages made and maintained by individuals rather than by businesses or
+                    corporations; web pages which are provisional, temporary, or one-of-a-kind; web pages
+                    which challenge conventions of reading, writing, design, ownership, privacy, security, or
+                    identity.</strong> </em>
+                </p>
+            </div>
             <p>
                 <br>
                 Handmade web pages flourished in the mid-to-late-1990s, in the brief period after the academic
@@ -59,7 +70,7 @@
               <br>
             </p>
     
-            <div style="padding:30px;border:double pink;">
+            <div class="pink">
             <p style="color:rgb(214, 0, 118);">
                 <em><strong>I evoke the term 'handmade web' in order to make a correlation between handmade web
                 pages and handmade print materials, such as zines, pamphlets, and artists books.</strong></em>
@@ -115,7 +126,7 @@
                 web as it once was, a web in progress, a web in the making.
                   <br>
             </p>
-            <div style="padding:30px;border:double pink;">
+            <div class="pink">
             <p style="color:rgb(214, 0, 118);">
                 <br>
                 <em><strong>I evoke the term 'handmade web' in order to advocate for an ongoing active engagement
