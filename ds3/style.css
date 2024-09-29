@@ -38,9 +38,10 @@ p {
     position: absolute;
     z-index: 2; /* Ensure this image is above the bubble */
     top: 10%;   /* Use percentage to make it responsive vertically */
-    left: 50%;  /* Use percentage to make it responsive horizontally */
-    width: 10%; /* Make the image responsive in size */
+    left: 55%;  /* Use percentage to make it responsive horizontally */
+    width: 90px; /* Make the image responsive in size */
     height: auto; /* Maintain aspect ratio */
+    padding: 5px;
 }
 
 /* Piercing image */
@@ -48,7 +49,18 @@ p {
     position: absolute;
     z-index: 2; /* Ensure this image is above the bubble */
     top: 30%;   /* Use percentage to make it responsive vertically */
-    left: 70%;  /* Use percentage to make it responsive horizontally */
-    width: 10%; /* Make the image responsive in size */
+    left: 65%;  /* Use percentage to make it responsive horizontally */
+    width: 90px; /* Make the image responsive in size */
     height: auto; /* Maintain aspect ratio */
+    padding: 5px;
+}
+
+.overlap-room {
+    position: absolute;
+    z-index: 2; /* Ensure this image is above the bubble */
+    top: 50%;   /* Use percentage to make it responsive vertically */
+    left: 50%;  /* Use percentage to make it responsive horizontally */
+    width: 120px; /* Make the image responsive in size */
+    height: auto; /* Maintain aspect ratio */
+    padding: 10px;
 }
