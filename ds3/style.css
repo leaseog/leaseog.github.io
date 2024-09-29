@@ -38,7 +38,7 @@ p {
     position: absolute;
     z-index: 2; /* Ensure this image is above the bubble */
     top: 10%;   /* Use percentage to make it responsive vertically */
-    left: 55%;  /* Use percentage to make it responsive horizontally */
+    left: 53%;  /* Use percentage to make it responsive horizontally */
     width: 90px; /* Make the image responsive in size */
     height: auto; /* Maintain aspect ratio */
     padding: 5px;
@@ -49,7 +49,7 @@ p {
     position: absolute;
     z-index: 2; /* Ensure this image is above the bubble */
     top: 30%;   /* Use percentage to make it responsive vertically */
-    left: 65%;  /* Use percentage to make it responsive horizontally */
+    left: 67%;  /* Use percentage to make it responsive horizontally */
     width: 90px; /* Make the image responsive in size */
     height: auto; /* Maintain aspect ratio */
     padding: 5px;
@@ -58,9 +58,19 @@ p {
 .overlap-room {
     position: absolute;
     z-index: 2; /* Ensure this image is above the bubble */
-    top: 50%;   /* Use percentage to make it responsive vertically */
-    left: 50%;  /* Use percentage to make it responsive horizontally */
+    top: 40%;   /* Use percentage to make it responsive vertically */
+    left: 48%;  /* Use percentage to make it responsive horizontally */
     width: 120px; /* Make the image responsive in size */
+    height: auto; /* Maintain aspect ratio */
+    padding: 10px;
+}
+
+.overlap-speaker{
+    position: absolute;
+    z-index: 2; /* Ensure this image is above the bubble */
+    top: 50%;   /* Use percentage to make it responsive vertically */
+    left: 63%;  /* Use percentage to make it responsive horizontally */
+    width: 130px; /* Make the image responsive in size */
     height: auto; /* Maintain aspect ratio */
     padding: 10px;
 }
