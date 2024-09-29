@@ -21,3 +21,34 @@ p {
     max-width: 100%; /* Ensures images scale down if too large for the container */
     height: auto;    /* Maintains the aspect ratio of the images */
 }
+
+  /* Inline CSS for positioning */
+  .image-container {
+    position: relative;
+}
+
+.speaking-bubble {
+    position: relative;
+    z-index: 1; /* Ensure this image is below the others */
+}
+
+
+/* Seashell image */
+.overlap-seashell {
+    position: absolute;
+    z-index: 2; /* Ensure this image is above the bubble */
+    top: 10%;   /* Use percentage to make it responsive vertically */
+    left: 50%;  /* Use percentage to make it responsive horizontally */
+    width: 10%; /* Make the image responsive in size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Piercing image */
+.overlap-piercing {
+    position: absolute;
+    z-index: 2; /* Ensure this image is above the bubble */
+    top: 30%;   /* Use percentage to make it responsive vertically */
+    left: 70%;  /* Use percentage to make it responsive horizontally */
+    width: 10%; /* Make the image responsive in size */
+    height: auto; /* Maintain aspect ratio */
+}
