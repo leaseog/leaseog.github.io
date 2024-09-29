@@ -14,6 +14,7 @@ p {
     justify-content: center; /* Centers the images horizontally */
     align-items: center;     /* Centers the images vertically */
     height: 80vh;           /* Optional: Full-height container */
+    gap: 20px;               /* Adds space between images */
 }
 
 .image-container img {
