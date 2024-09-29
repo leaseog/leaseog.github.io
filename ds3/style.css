@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: beige;
+}
+
+p {
+    color: rgb(27, 118, 29);
+}
+
+/* Flexbox method */
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers the images horizontally */
+    align-items: center;     /* Centers the images vertically */
+    height: 80vh;           /* Optional: Full-height container */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensures images scale down if too large for the container */
+    height: auto;    /* Maintains the aspect ratio of the images */
+}
