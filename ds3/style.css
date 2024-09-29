@@ -115,8 +115,8 @@ p{
     padding: 30px;
 }
 
-/* Piercing image */
-.overlap-piercing {
+/* earrings image */
+.overlap-earrings {
     position: absolute;
     z-index: 2; /* Ensure this image is above the bubble */
     top: 26%;   /* Use percentage to make it responsive vertically */
