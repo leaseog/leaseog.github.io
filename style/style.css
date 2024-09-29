@@ -1,44 +1,11 @@
 body{
-        padding:0;
-}
-        
-#a1 {
-        border: solid 1px blue;
-        width: 300px;
-        height: 300px;
-        position: relative;
-        background-color: red;
-        top: 10vw;
-        left: 10vh;
-        }
-
-.a1s1{
-        width:300px;
-        height: 50px;
-
-}
-.a1s2 {
-        width: 300px;
-        height: 50px;
+        background-color: rgb(255, 255, 255);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align:"center";
 }
 
-#a2 {
-        border: solid 1px blue;
-        width: 200px;
-        height: 200px;
-        background-color: red;
-        }
+h1   {color: rgb(95, 157, 224);}
+p    {color: rgb(112, 188, 106);}
 
-.a2s1{
-        width:300px;
-        height: 50px;
-
-}
-.a2s2 {
-        width: 300px;
-        height: 50px;
-}
-
-
-       
+.column {float:left;}
 
