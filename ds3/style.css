@@ -1,11 +1,7 @@
 body{
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: beige;
-}
-
-p {
-    color: rgb(27, 118, 29);
+    background-color: rgb(0, 0, 0);
 }
 
 /* Flexbox method */
@@ -15,21 +11,44 @@ p {
     align-items: center;     /* Centers the images vertically */
     height: 80vh;           /* Optional: Full-height container */
     gap: 20px;               /* Adds space between images */
-}
-
-.image-container img {
+    position: relative;
+    margin-left: 220px;
+    margin-top:50px;
     max-width: 100%; /* Ensures images scale down if too large for the container */
     height: auto;    /* Maintains the aspect ratio of the images */
 }
 
-  /* Inline CSS for positioning */
-  .image-container {
-    position: relative;
+/* Initially, images are black and white */
+.image-container img {
+    filter: grayscale(100%);
+    transition: filter 0.2s ease;
+}
+
+/* Exclude the speaking bubble from the grayscale effect */
+.image-container .speaking-bubble {
+    filter: none; /* No grayscale filter for the speaking bubble */
+}
+
+/* On hover, images will become colorful except the speaking bubble */
+.image-container img:not(.speaking-bubble):hover {
+    filter: grayscale(0%);
+}
+
+/* On hover, images will become colorful */
+.image-container img:hover {
+    filter: grayscale(0%);
+}
+
+
+/* Ensure the speaking bubble doesn't change on hover */
+.image-container .speaking-bubble:hover {
+    filter: none; /* No change on hover for the speaking bubble */
 }
 
 .speaking-bubble {
     position: relative;
     z-index: 1; /* Ensure this image is below the others */
+    filter: none;
 }
 
 
@@ -37,40 +56,60 @@ p {
 .overlap-seashell {
     position: absolute;
     z-index: 2; /* Ensure this image is above the bubble */
-    top: 10%;   /* Use percentage to make it responsive vertically */
-    left: 53%;  /* Use percentage to make it responsive horizontally */
-    width: 90px; /* Make the image responsive in size */
+    top: 14%;   /* Use percentage to make it responsive vertically */
+    left: 50%;  /* Use percentage to make it responsive horizontally */
+    width: 110px; /* Make the image responsive in size */
     height: auto; /* Maintain aspect ratio */
-    padding: 5px;
+    padding: 30px;
 }
 
 /* Piercing image */
 .overlap-piercing {
     position: absolute;
     z-index: 2; /* Ensure this image is above the bubble */
-    top: 30%;   /* Use percentage to make it responsive vertically */
-    left: 67%;  /* Use percentage to make it responsive horizontally */
-    width: 90px; /* Make the image responsive in size */
+    top: 26%;   /* Use percentage to make it responsive vertically */
+    left: 64%;  /* Use percentage to make it responsive horizontally */
+    width: 120px; /* Make the image responsive in size */
     height: auto; /* Maintain aspect ratio */
-    padding: 5px;
+    padding: 30px;
 }
 
 .overlap-room {
     position: absolute;
     z-index: 2; /* Ensure this image is above the bubble */
-    top: 40%;   /* Use percentage to make it responsive vertically */
-    left: 48%;  /* Use percentage to make it responsive horizontally */
-    width: 120px; /* Make the image responsive in size */
+    top: 60%;   /* Use percentage to make it responsive vertically */
+    left: 53%;  /* Use percentage to make it responsive horizontally */
+    width: 140px; /* Make the image responsive in size */
     height: auto; /* Maintain aspect ratio */
-    padding: 10px;
+    padding: 30px;
 }
 
-.overlap-speaker{
+.overlap-sandwich {
     position: absolute;
     z-index: 2; /* Ensure this image is above the bubble */
-    top: 50%;   /* Use percentage to make it responsive vertically */
-    left: 63%;  /* Use percentage to make it responsive horizontally */
-    width: 130px; /* Make the image responsive in size */
+    top: 46%;   /* Use percentage to make it responsive vertically */
+    left: 62%;  /* Use percentage to make it responsive horizontally */
+    width: 150px; /* Make the image responsive in size */
     height: auto; /* Maintain aspect ratio */
-    padding: 10px;
+    margin: 30px;
+}
+
+.overlap-speaker {
+    position: absolute;
+    z-index: 2; /* Ensure this image is above the bubble */
+    top: 39%;   /* Use percentage to make it responsive vertically */
+    left: 43%;  /* Use percentage to make it responsive horizontally */
+    width: 170px; /* Make the image responsive in size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 30px;
+}
+
+.overlap-{
+    position: absolute;
+    z-index: 2; /* Ensure this image is above the bubble */
+    top: 57%;   /* Use percentage to make it responsive vertically */
+    left: 63%;  /* Use percentage to make it responsive horizontally */
+    width: 140px; /* Make the image responsive in size */
+    height: auto; /* Maintain aspect ratio */
+    padding: 30px;
 }
