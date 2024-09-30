@@ -64,6 +64,7 @@ p{
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.1s; /* Smooth transition */
     position:absolute, center;
+    font-size: small;
 }
 
 .back-button:hover {
@@ -228,8 +229,8 @@ video {
 
 .quizbutton {
     display: inline-block; /* Allows padding */
-    margin-top: 20px; /* Space above the button */
-    padding: 10px 20px; /* Space inside the button */
+    margin-top: 10px; /* Space above the button */
+    padding: 5px 10px; /* Space inside the button */
     background-color: #4a2121; /* Button background color */
     color: rgb(243, 238, 235); /* Text color */
     text-decoration: none; /* Remove underline */
