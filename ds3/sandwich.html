@@ -38,7 +38,7 @@
 
      // Add mouseenter event for each word
      hoverWords.forEach(word => {
-         word.addEventListener('mouseenter', function() {
+         word.addEventListener('click', function() {
              const audioSrc = this.getAttribute('data-audio'); // Get audio source from data attribute
              hoverAudio.src = audioSrc; // Set the audio source
              hoverAudio.currentTime = 0; // Reset the audio to the start
