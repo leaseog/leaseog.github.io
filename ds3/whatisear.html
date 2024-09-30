@@ -7,6 +7,9 @@
     </head>
 
     <body class="papertextureimage1">
+        <!-- Add id to the audio element -->
+        <audio id="pageAudio" src="./audios/crowded.mp3" preload="auto"></audio>
+
         <div class="border-box">
 
         <h1> History of Ears</h1>
@@ -33,5 +36,15 @@
             </p>
             <a href="welcome.html" class="back-button">back to main</a>
         </div>
+
+        <script>
+            // Function to play the audio on page load
+            window.onload = function() {
+                const audio = document.getElementById('pageAudio');
+                audio.play().catch(error => {
+                    console.log('Autoplay prevented, user interaction required:', error);
+                });
+            };
+        </script>
     </body>
 </html>
