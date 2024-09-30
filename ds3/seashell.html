@@ -1,24 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>seashell</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Seashell</title>
         <link rel="stylesheet" href="style.css">
     </head> 
     
     <body class="papertextureimage3">
-        <audio src="./audios/seawave.mp3" preload="auto"></audio>
-        
-    <div class="border-box">
-        <h1> Anatomy of Ears</h1>
-        
-        <body>
-            <p>The inner ear contains the cochlea, a spiral structure resembling a seashell, filled with fluid and lined with hair cells that convert sound vibrations into electrical signals for the brain to interpret. Interestingly, when you hold a seashell to your ear, the shape amplifies ambient sounds, creating a resonant effect that mimics ocean waves. While it's not actually the sound of the ocean, it's a blend of environmental noises that the seashell's design enhances, beautifully illustrating how the ear's intricate anatomy and natural forms like seashells influence our auditory experience.
-                The ear is divided into three main parts: the outer ear, the middle ear, and the inner ear. 
+        <!-- Add id to the audio element -->
+        <audio id="pageAudio" src="./audios/seawave.mp3" preload="auto"></audio>
+
+        <div class="border-box">
+            <h1>Anatomy of Ears</h1>
+            
+            <p>
+                The inner ear contains the cochlea, <strong>a spiral structure resembling a seashell</strong>, filled with fluid and lined with hair cells that convert sound vibrations into electrical signals for the brain to interpret. Interestingly, when you hold a seashell to your ear, the shape amplifies ambient sounds, creating a resonant effect that mimics ocean waves. While it's not actually the sound of the ocean, it's a blend of environmental noises that the seashell's design enhances, beautifully illustrating how the ear's intricate anatomy and natural forms like seashells influence our auditory experience.
+                <br><br>
+                
+                The ear is divided into three main parts: 
+                <br>
+                <ul style="text-align: center;">
+                    <li>the outer ear</li>
+                    <li>the middle ear</li>
+                    <li>the inner ear</li>
+                </ul> 
+                <img src="./images/anatomy.png" width="400px" height="auto">
+                <br>
                 The outer ear captures sound waves, which travel through the ear canal to the eardrum. 
                 The middle ear amplifies these sound vibrations, while the inner ear, particularly the cochlea, converts them into electrical signals that the brain interprets as sound. 
-                The inner ear also contains the vestibular system, which is crucial for balance.</p>
-        </body>
+                The inner ear also contains the vestibular system, which is crucial for balance.
+            </p>
 
-    <a href="welcome.html" class="back-button">back to main</a>
-    </div>
+            <a href="welcome.html" class="back-button">Back to main</a>
+        </div>
+
+        <script>
+            // Function to play the audio on page load
+            window.onload = function() {
+                const audio = document.getElementById('pageAudio');
+                audio.play().catch(error => {
+                    console.log('Autoplay prevented, user interaction required:', error);
+                });
+            };
+        </script>
+    </body>
 </html>

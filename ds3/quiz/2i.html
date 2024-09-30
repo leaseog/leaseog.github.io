@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ear quiz</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<div class="border-box">
+<body>
+    <h1>INCORRECT</h1>
+    <p style="text-align: center;">sorry try again!</p>
+
+    <a href="1.html" class="back-button">try again</a>
+</div>
+
+    <!-- JavaScript to pick a random background color -->
+    <script>
+        // Array of CSS classes for different background colors
+        const backgroundClasses = ['bg-color-1', 'bg-color-2', 'bg-color-3', 'bg-color-4', 'bg-color-5', 'bg-color-6', 'bg-color-7'];
+
+        // Select a random class
+        const randomClass = backgroundClasses[Math.floor(Math.random() * backgroundClasses.length)];
+
+        // Apply the random background color class to the body
+        document.body.classList.add(randomClass);
+    </script>
+</body>
+</html>

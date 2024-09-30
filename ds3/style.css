@@ -101,20 +101,9 @@ p{
     filter: none; /* No grayscale filter for the speaking bubble */
 }
 
-/* On hover, images will become colorful except the speaking bubble */
-.image-container img:not(.speaking-bubble):hover {
-    filter: grayscale(0%);
-}
-
 /* On hover, images will become colorful */
 .image-container img:hover {
     filter: grayscale(0%);
-}
-
-
-/* Ensure the speaking bubble doesn't change on hover */
-.image-container .speaking-bubble:hover {
-    filter: none; /* No change on hover for the speaking bubble */
 }
 
 .speaking-bubble {
@@ -206,4 +195,51 @@ video {
 
 #container{
     align-items: center;
+}
+
+/* CSS file (style.css) */
+.bg-color-1 {
+    background-color: #ffadad; /* Light Red */
+}
+
+.bg-color-2 {
+    background-color: #ffd6a5; /* Light Orange */
+}
+
+.bg-color-3 {
+    background-color: #fdffb6; /* Light Yellow */
+}
+
+.bg-color-4 {
+    background-color: #caffbf; /* Light Green */
+}
+
+.bg-color-5 {
+    background-color: #9bf6ff; /* Light Blue */
+}
+
+.bg-color-6 {
+    background-color: #a0c4ff; /* Light Purple */
+}
+
+.bg-color-7 {
+    background-color: #bdb2ff; /* Light Violet */
+}
+
+.quizbutton {
+    display: inline-block; /* Allows padding */
+    margin-top: 20px; /* Space above the button */
+    padding: 10px 20px; /* Space inside the button */
+    background-color: #4a2121; /* Button background color */
+    color: rgb(243, 238, 235); /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.1s; /* Smooth transition */
+    position:absolute, center;
+}
+
+.quizbutton:hover {
+    background-color: rgb(243, 238, 235);
+    color: #4a2121;
+
 }
