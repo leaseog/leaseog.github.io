@@ -3,51 +3,86 @@
     <head>
         <title>piercing</title>
         <link rel="stylesheet" href="style.css">
+        
     </head>
     <body class="papertextureimage3">
-        
-        <div id="container"></div>
+        <!-- Add id to the audio element -->
+        <audio id="pageAudio" src="./audios/servicebell.wav" preload="auto"></audio>
+
+        <div id="container" class="border-box">
             <h1>welcome to the piercing shop~*</h1>
-            <h3>look at my ears, aren't they so cool?</h3>
-            <p>please try on different piercings and check yourself!</p>
+            <p style="color:rgb(118, 35, 57)">Lea walked into the piercing shop, excited to choose a new earring for her ear. She looked around at the colorful displays and shiny jewelry, thinking about how people love to decorate their important and precious things. For her, her ear was special, and she wanted to add something beautiful to it.
+            <br><br>
+            then the worker said, "please try on different piercings and check yourself!"</p>
 
-                <video id="video" autoplay playsinline></video>
-           
                 <img src="./images/piercing ear.png" width="350px" height="auto" position="center">
-
-                <img src="./images/piercingdec1.png" width="80px;" height="auto">
-                <img src="./images/piercingdec2.png" width="80px;" height="auto">
-                <img src="./images/piercingdec3.png" width="80px;" height="auto">
-                <img src="./images/piercingdec4.png" width="80px;" height="auto">
-
+<br><br><br>
+                <img src="./images/piercingdec1.png" width="80px;" height="auto" draggable="true" class="draggable" style="top: 830px; left: 100px;">
+                <img src="./images/piercingdec2.png" width="80px;" height="auto" draggable="true" class="draggable" style="top: 830px; left: 200px;">
+                <img src="./images/piercingdec3.png" width="80px;" height="auto" draggable="true" class="draggable" style="top: 830px; left: 300px;">
+                <img src="./images/piercingdec4.png" width="80px;" height="auto" draggable="true" class="draggable" style="top: 830px; left: 400px;">
+<br><br><br><br><br><br>
                 <a href="welcome.html" class="back-button">back to main</a>
 
-
-            
-            <script>
-                // Get access to the camera
-                async function initCamera() {
-                    try {
-                        const constraints = {
-                            video: true,  // Enable video
-                            audio: false  // Disable audio
-                        };
-
-                        const stream = await navigator.mediaDevices.getUserMedia(constraints);
-                        const videoElement = document.getElementById('video');
-                        videoElement.srcObject = stream; // Set the video source to the camera stream
-
-                    } catch (error) {
-                        console.error('Error accessing the camera: ', error);
-                    }
-                }
-
-                // Initialize the camera when the page loads
-                window.onload = initCamera;
-            </script>
-
-        
                 
         </div>
     </body>
+
+    <script>
+
+    // Get all draggable images
+    const draggables = document.querySelectorAll('.draggable');
+
+    // Add event listeners for drag start, drag over, and drop
+    draggables.forEach(draggable => {
+        draggable.addEventListener('dragstart', dragStart);
+        draggable.addEventListener('dragend', dragEnd);
+    });
+
+    function dragStart(event) {
+        // Store the dragged element's ID (or any other identifier)
+        event.dataTransfer.setData('text/plain', event.target.src);
+        event.target.classList.add('dragging');
+    }
+
+    function dragEnd(event) {
+        event.target.classList.remove('dragging');
+    }
+
+    // Allow dropping in the container
+    const container = document.getElementById('container');
+
+    container.addEventListener('dragover', (event) => {
+        event.preventDefault(); // Prevent default to allow drop
+    });
+
+    container.addEventListener('drop', (event) => {
+        event.preventDefault();
+        const draggedImageSrc = event.dataTransfer.getData('text/plain');
+
+        // Create a new image element at the drop location
+        const newImage = document.createElement('img');
+        newImage.src = draggedImageSrc;
+        newImage.className = 'draggable'; // Reapply the draggable class
+        newImage.style.position = 'absolute'; // Positioning absolute for free movement
+        newImage.style.left = `${event.offsetX}px`; // Position where dropped
+        newImage.style.top = `${event.offsetY}px`;
+        newImage.width = 80; // Set width (you can adjust this as needed)
+        newImage.height = 'auto'; // Maintain aspect ratio
+        container.appendChild(newImage); // Add the new image to the container
+
+        // Re-add drag event listeners to the new image
+        newImage.addEventListener('dragstart', dragStart);
+        newImage.addEventListener('dragend', dragEnd);
+    });
+
+        // Function to play the audio on page load
+        window.onload = function() {
+            const audio = document.getElementById('pageAudio');
+            audio.play().catch(error => {
+                console.log('Autoplay prevented, user interaction required:', error);
+            });
+        };
+
+    </script>
 </html>

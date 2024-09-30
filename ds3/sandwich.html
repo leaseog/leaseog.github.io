@@ -1,51 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title>sandwich</title>
+<head>
+    <title>Sandwich</title>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body class="papertextureimage3">
+</head>
+<body class="papertextureimage3">
+    <!-- Add id to the audio element -->
+    <audio id="pageAudio" src="./audios/door.wav" preload="auto"></audio>
+
     <div class="border-box">
-            <h1>imagine...</h1>
-            <br>
-   
-        <p>
-            On a quiet Saturday evening, Morgan turned on the <span class="hover-word" data-audio="./audios/gas stove.wav"> gas stove</span> and placed a pan on the burner. 
-            She cracked an egg with a quick <span class="hover-word" id="hoverWord" data-audio="./audios/breaking_egg.wav">tap on the bowl</span> and poured it into the pan, the <span class="hover-word" id="hoverWord" data-audio="./audios/sizzling.mp3" preload="auto">sizzle</span> rising as it hit the heat. 
-            After covering the pan with a <span class="hover-word" id="hoverWord" data-audio="./audios/pan close.wav">soft clink</span>, she grabbed some bread and started preparing for a sandwich. 
-            While the egg cooked, she snacked on something <span class="hover-word" id="hoverWord" data-audio="./audios/crunchy.mp3" preload="auto">crunchy</span>, each bite crisp in the quiet room. 
-            When the <span class="hover-word" id="hoverWord" data-audio="./audios/cooking_bell.wav" preload="auto">cooking bell</span> rang, she slid the egg onto the bread, added some toppings, and finished her sandwich. 
-            Sitting down with her meal, she poured herself a cold beer, the <span class="hover-word" id="hoverWord" data-audio="./audios/Beer poured into glass.mp3" preload="auto">fizz</span> rising in the glass, and took a sip as she enjoyed her freshly made sandwich.
+        <h1>In the Kitchen..</h1>
+        <br>
+        <p style="color:rgb(118, 35, 57)">
+            On a quiet Saturday evening, Lea turned on the <span class="hover-word" data-audio="./audios/gas stove.wav"> gas stove</span> and placed a pan on the burner. 
+            She cracked an egg with a quick <span class="hover-word" data-audio="./audios/breaking_egg.wav">tap on the bowl</span> and poured it into the pan, the <span class="hover-word" data-audio="./audios/sizzling.mp3">sizzle</span> rising as it hit the heat. 
+            After covering the pan with a <span class="hover-word" data-audio="./audios/pan close.wav">soft clink</span>, she grabbed some bread and started preparing for a sandwich. 
+            While the egg cooked, she snacked on something <span class="hover-word" data-audio="./audios/crunchy.mp3">crunchy</span>, each bite crisp in the quiet room. 
+            When the <span class="hover-word" data-audio="./audios/cooking_bell.wav">cooking bell</span> rang, she slid the egg onto the bread, added some toppings, and finished her sandwich. 
+            Sitting down with her meal, she poured herself a cold beer, the <span class="hover-word" data-audio="./audios/Beer poured into glass.mp3">fizz</span> rising in the glass, and took a sip as she enjoyed her freshly made sandwich.
             <br><br>
-            A moment later... she had sandwich too much, so she got indigestion. Now the ear accupuncture is needed.
+            A moment later... she had sandwich too much, so she got indigestion. Now the ear acupuncture is needed.
         </p>
 
-        <img src="./images/left ear for acc.png">
-        <img src="./images/right ear for acc.png">
-        
+       <!-- <img src="./images/left ear for acc.png">
+        <img src="./images/right ear for acc.png">-->
+        <img src="./images/The Poosh Guide to Ear Seeds.jpg" width="280px" height="auto">
+        <figcaption style="text-size-adjust: xsmall;">image credit: The Poosh</figcaption>
 
         <a href="welcome.html" class="back-button">back to main</a>
-
     </div>
 
- <!-- Add an audio element here -->
- <audio id="hoverAudio" preload="auto"></audio>
+    <!-- Add an audio element here -->
+    <audio id="hoverAudio" preload="auto"></audio>
 
- <script>
-     // Select all elements with the class 'hover-word'
-     const hoverWords = document.querySelectorAll('.hover-word');
-     const hoverAudio = document.getElementById('hoverAudio');
+    <script>
+        // Select all elements with the class 'hover-word'
+        const hoverWords = document.querySelectorAll('.hover-word');
+        const hoverAudio = document.getElementById('hoverAudio');
 
-     // Add mouseenter event for each word
-     hoverWords.forEach(word => {
-         word.addEventListener('click', function() {
-             const audioSrc = this.getAttribute('data-audio'); // Get audio source from data attribute
-             hoverAudio.src = audioSrc; // Set the audio source
-             hoverAudio.currentTime = 0; // Reset the audio to the start
-             hoverAudio.play(); // Play the audio
-         });
-     });
- </script>
+        // Set the volume for hover audio
+        hoverAudio.volume = 0.5; // Adjust volume between 0.0 and 1.0
 
-    </body>
+        // Add click event for each word
+        hoverWords.forEach(word => {
+            word.addEventListener('click', function() {
+                const audioSrc = this.getAttribute('data-audio'); // Get audio source from data attribute
+                hoverAudio.src = audioSrc; // Set the audio source
+                hoverAudio.currentTime = 0; // Reset the audio to the start
+                hoverAudio.play(); // Play the audio
+            });
+        });
+    </script>
+
+    <script>
+        // Function to play the audio on page load
+        window.onload = function() {
+            const audio = document.getElementById('pageAudio');
+            audio.play().catch(error => {
+                console.log('Autoplay prevented, user interaction required:', error);
+            });
+        };
+    </script>
+</body>
 </html>

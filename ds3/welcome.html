@@ -5,14 +5,14 @@
             <link rel="stylesheet" href="style.css">
            
     </head>
-
+<p style="color:rgb(77, 77, 77);">**for the best experience, please use laptop !</p>
         <div class="image-container">
             <audio id="pageAudio" src="./audios/urban.wav" preload="auto"></audio>
             <a href="whatisear.html"><img src="./images/ear_bw.png" width="300px" height="auto" alt="Ear"></a>
             <img src="./images/speaking_bubble.png" width="600px" height="auto" alt="speaking_bubble" class="speaking_bubble">
             <a href="seashell.html"><img src="./images/seashell.png" alt="Seashell" class="overlap-seashell"></a>
             <a href="piercing.html"><img src="./images/earrings.png" alt="earrings" class="overlap-earrings"></a>
-            <a href="room.html"><img src="./images/room.png" alt="rooom" class="overlap-room"></a>
+            <!-- <a href="room.html"><img src="./images/room.png" alt="rooom" class="overlap-room"></a> -->
             <a href="headphone.html"><img src="./images/headphone.png" alt="headphone" class="overlap-headphone"></a>
             <a href="sandwich.html"><img src="./images/sandwich.png" alt="sandwich" class="overlap-sandwich"></a>
         </div>
@@ -20,7 +20,7 @@
     <!--<a href="index_ear.html" style="color:rgb(243, 238, 235)">index</a> -->
     <br>
     <br>
-    <a href="../index.html" style="color:rgb(243, 238, 235)">back to Lea's page home</a>
+    <a href="../index.html" style="color:black">back to Lea's page home</a>
 
 
     <script>
@@ -31,5 +31,18 @@
                 console.log('Autoplay prevented, user interaction required:', error);
             });
         };
+
+    function playClickSound() {
+        const clickSound = document.getElementById('clickSound');
+        clickSound.currentTime = 0; // Reset sound to start
+        clickSound.play().catch(error => {
+            console.log('Audio playback prevented:', error);
+        });
+    }
+
+    // Add click event listener to the entire document
+    document.addEventListener('click', playClickSound);
+</script>
+
     </script>
 </html>

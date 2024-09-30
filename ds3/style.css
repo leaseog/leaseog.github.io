@@ -38,7 +38,7 @@ h1,h2,h3{
     padding: 20px; /* Space inside the border */
     width: 500px;
     margin: 50px;
-    position: center;
+    position: relative;
     text-align: center; /* Center text inside the box */
     background-color: rgb(243, 238, 235); /* Background color of the box */
     border-radius: 10px;
@@ -159,8 +159,8 @@ p{
 .overlap-headphone {
     position: absolute;
     z-index: 2; /* Ensure this image is above the bubble */
-    top: 37%;   /* Use percentage to make it responsive vertically */
-    left: 44%;  /* Use percentage to make it responsive horizontally */
+    top: 49%;   /* Use percentage to make it responsive vertically */
+    left: 46%;  /* Use percentage to make it responsive horizontally */
     width: 150px; /* Make the image responsive in size */
     height: auto; /* Maintain aspect ratio */
     margin: 30px;
@@ -242,4 +242,9 @@ video {
 .quizbutton:hover {
     background-color: rgb(243, 238, 235);
     color: rgb(177, 67, 67);
+}
+
+.draggable {
+    cursor: move; /* Change cursor to indicate draggable items */
+    position: absolute; /* Position absolute for free movement */
 }

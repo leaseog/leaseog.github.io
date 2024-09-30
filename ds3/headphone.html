@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
         <body class="papertextureimage2">
+            <audio id="pageAudio" src="./audios/rock.mp3" preload="auto"></audio>
         <div class="border-box">
             <h1>Maintaining Healthy Ears</h1>
             <h3>How much do you know about your ear health?</h3>
@@ -21,4 +22,15 @@
         <a href="welcome.html" class="back-button">back to main</a>
         </div>
     </body>
+
+    <script>
+        // Function to play the audio on page load
+        window.onload = function() {
+            const audio = document.getElementById('pageAudio');
+            audio.play().catch(error => {
+                console.log('Autoplay prevented, user interaction required:', error);
+            });
+        };
+    </script>
+    
 </html>
