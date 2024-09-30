@@ -59,10 +59,7 @@ p{
     margin-top: 20px; /* Space above the button */
     padding: 10px 20px; /* Space inside the button */
     background-color: #4a3221; /* Button background color */
-    color: rgb(243, 238, 235)
-    
-    
-    ; /* Text color */
+    color: rgb(243, 238, 235); /* Text color */
     text-decoration: none; /* Remove underline */
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.1s; /* Smooth transition */
@@ -189,4 +186,24 @@ p{
 
 .hover-word:hover {
     color: #ff6347; /* Change color on hover */
+}
+
+video {
+    border: 1px solid white;
+    width: 480px;
+    height: 640px;
+    background-color: beige; /* Fallback background for video */
+    transform: scaleX(-1); /* Mirror effect */
+    align-self: center; /* Center the video vertically */
+    justify-content: flex-start;
+}
+
+.border-box-grid {
+    display: flex; /* Use Flexbox for the border-box */
+    flex-direction: column; /* Stack children vertically */
+    margin-left: 20px; /* Space between video and border-box */
+}
+
+#container{
+    align-items: center;
 }

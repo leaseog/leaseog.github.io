@@ -5,8 +5,42 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="papertextureimage3">
-        <h1>welcome to the piercing shop~*</h1>
-        <h3>look at my ears, aren't they so cool?</h3>
+        
+        <div id="container"></div>
+            <h1>welcome to the piercing shop~*</h1>
+            <h3>look at my ears, aren't they so cool?</h3>
+
+                <video id="video" autoplay playsinline></video>
+           
+                <img src="./images/piercing ear.png" width="400px" height="auto" position="center">
+                <a href="welcome.html" class="back-button">back to main</a>
+
+                <img src=""
+            
+            <script>
+                // Get access to the camera
+                async function initCamera() {
+                    try {
+                        const constraints = {
+                            video: true,  // Enable video
+                            audio: false  // Disable audio
+                        };
+
+                        const stream = await navigator.mediaDevices.getUserMedia(constraints);
+                        const videoElement = document.getElementById('video');
+                        videoElement.srcObject = stream; // Set the video source to the camera stream
+
+                    } catch (error) {
+                        console.error('Error accessing the camera: ', error);
+                    }
+                }
+
+                // Initialize the camera when the page loads
+                window.onload = initCamera;
+            </script>
+
+        
+                
+        </div>
     </body>
-    <a href="welcome.html" class="back-button">back to main</a>
 </html>
