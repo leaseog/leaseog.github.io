@@ -179,12 +179,14 @@ p{
     margin: 30px;
 }
 
-.overlap-{
-    position: absolute;
-    z-index: 2; /* Ensure this image is above the bubble */
-    top: 57%;   /* Use percentage to make it responsive vertically */
-    left: 63%;  /* Use percentage to make it responsive horizontally */
-    width: 140px; /* Make the image responsive in size */
-    height: auto; /* Maintain aspect ratio */
-    padding: 30px;
+.hover-word {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Optional: Add a transition effect */
+}
+
+.hover-word:hover {
+    color: #ff6347; /* Change color on hover */
 }

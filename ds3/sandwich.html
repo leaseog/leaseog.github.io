@@ -5,7 +5,47 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body class="papertextureimage3">
-        had sandwich but 체했어. so accupuncture is needed
+        
+            <h1>imagine...</h1>
+            <br>
+    <div class="border-box">
+        <p>
+            On a quiet Saturday evening, Morgan turned on the <span class="hover-word" data-audio="./audios/gas stove.wav"> gas stove</span> and placed a pan on the burner. 
+            She cracked an egg with a quick <span class="hover-word" id="hoverWord" data-audio="./audios/breaking_egg.wav">tap on the bowl</span> and poured it into the pan, the <span class="hover-word" id="hoverWord" audio src="./audios/sizzling.mp3" preload="auto">sizzle</span> rising as it hit the heat. 
+            After covering the pan with a <span class="hover-word" id="hoverWord" audio src="./audios/pan close.wav" preload="auto">soft clink</span>, she grabbed some bread and started preparing for a sandwich. 
+            While the egg cooked, she snacked on something <span class="hover-word" id="hoverWord" audio src="./audios/crunchy.mp3" preload="auto">crunchy</span>, each bite crisp in the quiet room. 
+            When the <span class="hover-word" id="hoverWord" audio src="./audios/cooking_bell.wav" preload="auto">cooking bell</span> rang, she slid the egg onto the bread, added some toppings, and finished her sandwich. 
+            Sitting down with her meal, she poured herself a cold beer, the <span class="hover-word" id="hoverWord" audio src="./audios/Beer poured into glass.mp3" preload="auto">fizz</span> rising in the glass, and took a sip as she enjoyed her freshly made sandwich.
+            <br><br>
+            A moment later... she had sandwich too much, so she got indigestion. Now the ear accupuncture is needed.
+        </p>
+
+        <img src="./images/left ear for acc.png">
+        <img src="./images/right ear for acc.png">
+        
+
+        <a href="welcome.html" class="back-button">back to main</a>
+
+    </div>
+
+ <!-- Add an audio element here -->
+ <audio id="hoverAudio" preload="auto"></audio>
+
+ <script>
+     // Select all elements with the class 'hover-word'
+     const hoverWords = document.querySelectorAll('.hover-word');
+     const hoverAudio = document.getElementById('hoverAudio');
+
+     // Add mouseenter event for each word
+     hoverWords.forEach(word => {
+         word.addEventListener('mouseenter', function() {
+             const audioSrc = this.getAttribute('data-audio'); // Get audio source from data attribute
+             hoverAudio.src = audioSrc; // Set the audio source
+             hoverAudio.currentTime = 0; // Reset the audio to the start
+             hoverAudio.play(); // Play the audio
+         });
+     });
+ </script>
+
     </body>
-    <a href="welcome.html" class="back-button">back to main</a>
 </html>
