@@ -8,8 +8,11 @@
 
  h1{
     font-size: 70px;
-    text-align: right;
+    text-align: center;
     text-shadow: 4px 4px rgb(54, 134, 55);
+ }
+ p{
+    text-align: center;
  }
 
 
@@ -284,7 +287,7 @@
     display: inline-block;
     position:relative;
     top: 29.5vw;
-    left: -42vh;
+    left: -43vh;
 }
 .a2s5:hover{
     background-color: blue;
@@ -299,7 +302,7 @@
     display: inline-block;
     position:relative;
     top: 37vw;
-    left: -56vh;
+    left: -57vh;
 }
 .a2s6:hover{
     background-color: blue;
@@ -314,7 +317,7 @@
     display: inline-block;
     position:relative;
     top: 30vw;
-    left: -50vh;
+    left: -51vh;
 }
 .a2s7:hover{
     background-color: blue;
@@ -358,20 +361,20 @@
 .a3s1 {
     height: 100px;
     width: 400px;
-    background-color: rgb(20, 200, 155);
+    background-color: rgb(7, 0, 72);
     opacity: 0.3;
-    border-radius: 30%;
+    border-radius: 10px;
     display: inline-block;
     position:relative;
     top: 22vw;
-    left: 16vh;
+    left: 17vh;
 }
 .a3s2:nth-child(2) {
     height: 500px;
     width: 100px;
-    background-color: rgb(20, 200, 155);
+    background-color: rgb(7, 0, 72);
     opacity: 0.3;
-    border-radius: 30%;
+    border-radius: 10px;
     display: inline-block;
     position:relative;
     top: 47vw;
@@ -380,9 +383,9 @@
 .a3s3:nth-child(3) {
     height: 500px;
     width: 100px;
-    background-color: rgb(20, 200, 155);
+    background-color: rgb(7, 0, 72);
     opacity: 0.3;
-    border-radius: 30%;
+    border-radius: 10px;
     display: inline-block;
     position:relative;
     top: 47vw;
@@ -393,9 +396,113 @@
     width: 400px;
     background-color: rgb(220, 200, 155);
     opacity: 0.3;
-    border-radius: 30%;
+    border-radius: 10px;
     display: inline-block;
     position:relative;
     top: 33vw;
-    left: -52vh;
+    left: -53vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+#a4{
+    position:relative;
+        top: 90vw;
+        left: 50vw;
+}
+
+.a4s1{
+    width:70px;
+    height: 300px;
+    border-radius: 50px 0px 0px 0px;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 50px 10px rgb(0, 0, 255);
+    top: 0vw;
+    left: -10vh;
+}
+
+.a4s2:nth-child(2){
+    width:70px;
+    height: 70px;
+    border-radius: 50px 50px 50px 50px;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 50px 10px rgb(0, 0, 255);
+    top: -15vw;
+    left: 0vh;
+}
+
+.a4s3:nth-child(3){
+    width:70px;
+    height: 70px;
+    border-radius: 50px 50px 50px 50px;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 50px 10px rgb(0, 0, 255);
+    top: -24.5vw;
+    left: 0vh;
+}
+
+.a4s4:nth-child(4){
+    width:70px;
+    height: 300px;
+    border-radius: 0px 50px 0px 0px;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 50px 10px rgb(0, 0, 255);
+    top: -29vw;
+    left: 10vh;
+}
+
+
+
+
+
+
+
+
+
+#a5{
+    position:relative;
+        top: 90vw;
+        left: 50vw;
+}
+
+.a5s1{
+    width:300px;
+    height: 300px;
+    border-radius: 50px 50px 50px 50px;
+    position: relative;
+    background-color: rgb(140, 0, 255);
+    top: -15vw;
+    left: -10vh;
+}
+
+.a5s2:nth-child(2){
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    top: -32vw;
+    left: 2vh;
+}
+
+.a5s3:nth-child(3){
+    width:180px;
+    height: 180px;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    top: -32vw;
+    left: -3vh;
 }
