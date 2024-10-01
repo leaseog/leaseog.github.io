@@ -8,6 +8,7 @@
 <p style="color:rgb(77, 77, 77);">**for the best experience, please use laptop !</p>
         <div class="image-container">
             <audio id="pageAudio" src="./audios/urban.wav" preload="auto"></audio>
+            
             <a href="whatisear.html"><img src="./images/ear_bw.png" width="300px" height="auto" alt="Ear"></a>
             <img src="./images/speaking_bubble.png" width="600px" height="auto" alt="speaking_bubble" class="speaking_bubble">
             <a href="seashell.html"><img src="./images/seashell.png" alt="Seashell" class="overlap-seashell"></a>
@@ -17,7 +18,6 @@
             <a href="sandwich.html"><img src="./images/sandwich.png" alt="sandwich" class="overlap-sandwich"></a>
         </div>
     </body>
-    <!--<a href="index_ear.html" style="color:rgb(243, 238, 235)">index</a> -->
     <br>
     <br>
     <a href="../index.html" style="color:rgb(119, 119, 119)">back to Lea's page home</a>
@@ -31,18 +31,6 @@
                 console.log('Autoplay prevented, user interaction required:', error);
             });
         };
-
-    function playClickSound() {
-        const clickSound = document.getElementById('clickSound');
-        clickSound.currentTime = 0; // Reset sound to start
-        clickSound.play().catch(error => {
-            console.log('Audio playback prevented:', error);
-        });
-    }
-
-    // Add click event listener to the entire document
-    document.addEventListener('click', playClickSound);
-</script>
 
     </script>
 </html>

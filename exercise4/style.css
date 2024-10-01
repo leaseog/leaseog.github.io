@@ -17,45 +17,35 @@
     color:black;
  }
 
+ main {
+    margin: 0 auto;
+    width: 800px;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+ }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#a1 {
+ #a1, #a2, #a3, #a4, #a5  {
     position: relative;
-    top: 5vw;
-    left: 50%;
-    }
+    margin:5% 20%;
+    border: solid 1px;
+    height: 400px
+}
+
+
 
 .a1s1{
     width:100px;
     height: 25px;
     border-radius: 10px;
-    position: relative;
+    position: absolute;
     background-color: rgb(0, 0, 0);
     box-shadow: 5px 10px rgb(122, 122, 122);
-    top: 10vw;
-    left: 10vh;
+    top: 0px;
+    left: 0px;
 }
+
 .a1s1:hover {
     background-color: rgb(197, 44, 113);
 }
@@ -64,12 +54,13 @@
     width:100px;
     height: 25px;
     border-radius: 10px;
-    position: relative;
+    position: absolute;
     background-color: rgb(0, 0, 0);
     box-shadow: 5px 10px rgb(122, 122, 122);
-    top: 14vw;
-    left: 15vh;
+    top: 30px;
+    left: 30%;
 }
+
 .a1s2:nth-child(2):hover {
     background-color: rgb(197, 44, 113);
 }
@@ -78,12 +69,13 @@
     width:100px;
     height: 25px;
     border-radius: 10px;
-    position: relative;
+    position: absolute;
     background-color: rgb(0, 0, 0);
     box-shadow: 5px 10px rgb(122, 122, 122);
-    top: 18vw;
-    left: 20vh;
+    top: 60px;
+    left: 45%;
 }
+
 .a1s3:nth-child(3):hover {
     background-color: rgb(197, 44, 113);
 }
@@ -92,12 +84,13 @@
     width:100px;
     height: 25px;
     border-radius: 10px;
-    position: relative;
+    position: absolute;
     background-color: rgb(0, 0, 0);
     box-shadow: 5px 10px rgb(122, 122, 122);
-    top: 22vw;
-    left: 25vh;
+    top: 90px;
+    left: 60%;
 }
+
 .a1s4:nth-child(4):hover {
     background-color: rgb(197, 44, 113);
 }
@@ -106,25 +99,25 @@
     width:100px;
     height: 25px;
     border-radius: 10px;
-    position: relative;
+    position: absolute;
     background-color: rgb(0, 0, 0);
     box-shadow: 5px 10px rgb(122, 122, 122);
-    top: 26vw;
-    left: 30vh;
+    top: 130px;
+    left: 75%;
 }
 .a1s5:nth-child(5):hover {
     background-color: rgb(197, 44, 113);
 }
 
 .a1s6:nth-child(6) {
-    width:70px;
+    width:60px;
     height: 25px;
     border-radius: 10px;
-    position: relative;
-    background-color: rgb(122, 122, 122);
+    position: absolute;
+    background-color: rgb(162, 162, 162);
     box-shadow: 5px 10px rgb(0, 0, 0);
-    top: 16vw;
-    left: 15vh;
+    top: 10px;
+    left: 30%;
 }
 .a1s6:nth-child(6):hover {
     background-color: rgb(197, 44, 113);
@@ -134,12 +127,14 @@
     width:70px;
     height: 25px;
     border-radius: 10px;
-    position: relative;
+    position: absolute;
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 10px rgb(122, 122, 122);
-    top: 3vw;
-    left: 6vh;
-}
+    top: 0px;
+    left: 10px;
+} 
+
+
 .a1s7:nth-child(7):hover {
     background-color: rgb(197, 44, 113);
 }
@@ -148,11 +143,11 @@
     width:70px;
     height: 25px;
     border-radius: 10px;
-    position: relative;
+    position: absolute;
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 10px rgb(122, 122, 122);
-    top: 6vw;
-    left: 6vh;
+    top: 10px;
+    left: 10px;
 }
 .a1s8:nth-child(8):hover {
     background-color: rgb(197, 44, 113);
@@ -162,11 +157,11 @@
     width:70px;
     height: 25px;
     border-radius: 10px;
-    position: relative;
+    position: absolute;
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 10px rgb(122, 122, 122);
-    top: 9vw;
-    left: 6vh;
+    top: 20px;
+    left: 10px;
 }
 .a1s9:hover {
     background-color: rgb(197, 44, 113);
@@ -176,11 +171,11 @@
     width:70px;
     height: 25px;
     border-radius: 10px;
-    position: relative;
+    position: absolute;
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 10px rgb(122, 122, 122);
-    top: 12vw;
-    left: 6vh;
+    top: 30px;
+    left: 10px;
 }.a1s10:hover {
     background-color: rgb(197, 44, 113);
 }
@@ -188,12 +183,14 @@
     width:70px;
     height: 25px;
     border-radius: 10px;
-    position: relative;
+    position: absolute;
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 10px rgb(122, 122, 122);
-    top: 15vw;
-    left: 6vh;
-}.a1s11:hover {
+    top: 40px;
+    left: 10px;
+}
+
+.a1s11:hover {
     background-color: rgb(197, 44, 113);
 }
 
@@ -214,22 +211,16 @@
 
 
 
-#a2 {
-        position:relative;
-        top: 20vw;
-        left: 20vw;
-      }
-
 .a2s1 {
     height: 100px;
     width: 100px;
     background-color: rgb(200, 20, 62);
     border-radius: 50%;
-    display: inline-block;
-    position:relative;
-    top: 22vw;
-    left: 14vh;
+    position: absolute;
+    top: 0px;
+    left: 50%;
 }
+
 .a2s1:hover{
     background-color: blue;
 }
@@ -240,11 +231,12 @@
     width: 150px;
     background-color: rgb(200, 20, 62);
     border-radius: 50%;
-    display: inline-block;
-    position:relative;
-    top: 16vw;
-    left: 10vh;
-}
+    position: absolute;
+    top: 0;
+    left: calc(50% - 75px);
+} 
+/* ---why is the 50% the right top corner */
+
 .a2s2:hover{
     background-color: blue;
 }
@@ -355,11 +347,7 @@
 
 
 
-#a3 {
-    position:relative;
-        top: 25vw;
-        left: 20vw;
-}
+
 .a3s1 {
     height: 100px;
     width: 400px;
@@ -415,11 +403,6 @@
 
 
 
-#a4{
-    position:relative;
-        top: 90vw;
-        left: 50vw;
-}
 
 .a4s1{
     width:70px;
@@ -473,11 +456,6 @@
 
 
 
-#a5{
-    position:relative;
-        top: 90vw;
-        left: 50vw;
-}
 
 .a5s1{
     width:300px;
