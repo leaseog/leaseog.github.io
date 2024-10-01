@@ -73,9 +73,6 @@ p{
 
 }
 
-.wave {
-    text-decoration: wavy;
-}
 
     /* Flexbox method */
 .image-container {
@@ -242,9 +239,4 @@ video {
 .quizbutton:hover {
     background-color: rgb(243, 238, 235);
     color: rgb(177, 67, 67);
-}
-
-.draggable {
-    cursor: move; /* Change cursor to indicate draggable items */
-    position: absolute; /* Position absolute for free movement */
 }
