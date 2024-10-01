@@ -4,8 +4,20 @@ body{
         text-align:"center";
 }
 
-h1   {color: rgb(95, 157, 224);}
-p    {color: rgb(112, 188, 106);}
+h1   {
+        text-align: center;
+        color: rgb(95, 157, 224);
+}
 
-.column {float:left;}
+h3   {
+        text-align: center;
+        color: rgb(224, 95, 164);
+}
+
+p    {
+        text-align: center;
+        color: rgb(112, 188, 106);
+}
+
+
 
