@@ -26,6 +26,7 @@
  p{
     text-align: center;
     color:black;
+    font-size: 30px;
  }
 
  main {
@@ -43,7 +44,6 @@
     border: dotted 5px rgb(218, 244, 255);
     height: 400px
 }
-
 
 
 .a1s1{
@@ -372,6 +372,7 @@
     top: 50px;
     left: 40px;
 }
+
 .a3s2:nth-child(2) {
     height: 300px;
     width: 100px;
@@ -384,6 +385,15 @@
     left: 320px;
 }
 
+.a3s2:hover{
+    color: white;
+    transform: skew(35deg);
+    transition-property: rotate;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.5s;
+}
+
 .a3s3:nth-child(3) {
     height: 300px;
     width: 100px;
@@ -394,6 +404,15 @@
     position:absolute;
     top: 60px;
     left: 70px;
+}
+
+.a3s3:hover{
+    color: white;
+    transform: skew(-35deg);
+    transition-property: rotate;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.2s;
 }
 
 .a3s4:nth-child(4) {
@@ -451,6 +470,13 @@
     top: 130px;
     left: 180px;
 }
+.a4s3:hover{
+    color: white;
+    transform: translate(top 250px);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.2s;
+}
 
 .a4s4:nth-child(4){
     width:70px;
@@ -501,3 +527,19 @@
     top: 210px;
     left: 160px;
 }
+
+@keyframes stretch {
+    0% {
+      transform: scale(.3);
+      background-color: red;
+      border-radius: 100%;
+    }
+    50% {
+      background-color: orange;
+    }
+    100% {
+      transform: scale(1.5);
+      background-color: yellow;
+    }
+  }
+  
