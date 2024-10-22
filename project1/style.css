@@ -1,16 +1,22 @@
 body{
     background-color: beige;
     scroll-margin: 20px;
+    text-align: center;
+    font-family: "grenadine-mvb", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-p{
-    text-align: center;
+h1{
+    font-family: "grenadine-mvb", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .header{
     display: absolute;
     width: auto;
-    height: 30px;
+    height: 50px;
     background-color: white;
     margin: 2px;
     padding:5px;
@@ -27,13 +33,15 @@ p{
 }
 
 .cards{
-    display: relative;
+    display: inline-flex;
     width: 150px;
     height: 200px;
-    background-color: rgb(201, 188, 149);
-    margin: 2px;
+    top:30%;
+    background-color: rgb(214, 205, 176);
+    margin: 5px;
     padding:5px;
     border-radius: 10px;
+    text-align: center;
 }
 
 #toggle1, #toggle2, #toggle3, #toggle4{
