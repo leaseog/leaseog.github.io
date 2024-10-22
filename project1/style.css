@@ -1,69 +1,46 @@
 body{
     background-color: beige;
+    scroll-margin: 20px;
 }
 
 p{
     text-align: center;
 }
-/* 
-#toggle1, #toggle2, #toggle3, #toggle4{
-    display:none;
-}
 
-#box{
-    display: flex;
-    flex-direction: row;
-    width:auto;
-    height:1100px;
-    border: 1px solid rgb(45, 61, 45);
-    margin:80px;
-}
-
-.one, .two, .three, .four{
-    border:1px solid rgb(45, 61, 45);
-    height:100px;
-    background-color: rgb(205, 205, 205);
-    border-radius: 5px;
-    margin:10px;
-    text-align: center;
-    opacity:0;
-    transition:opacity 0.3s ease;
-    visibility: hidden;
-}
-
-#toggle1:not(:checked) + label.one{
-    opacity: 1;
-    visibility: visible;
-}
-
-#toggle1:checked +label.one + div.two {
-    opacity: 1;
-    visibility: visible;
-}
-
-#toggle2:checked + label + div.three {
-    opacity: 1;
-    visibility: visible;
-}
-
-#toggle3:checked + label + div.four {
-    opacity: 1;
-    visibility: visible;
-} */
-
-#toggle1, #toggle2, #toggle3, #toggle4{
-    display:none;
+.header{
+    display: absolute;
+    width: auto;
+    height: 30px;
+    background-color: white;
+    margin: 2px;
+    padding:5px;
 }
 
 .box{
     display: flex;
     flex-direction: row;
     width:1000px;
-    height:1100px;
+    height:750px;
     border: 1px dotted rgb(119, 150, 119);
     margin:0 auto;
     padding:5px;
 }
+
+.cards{
+    display: relative;
+    width: 150px;
+    height: 200px;
+    background-color: rgb(201, 188, 149);
+    margin: 2px;
+    padding:5px;
+    border-radius: 10px;
+}
+
+#toggle1, #toggle2, #toggle3, #toggle4{
+    display:none;
+}
+
+
 
 .one{
 
@@ -72,6 +49,7 @@ p{
     height:200px;
     background-color: rgb(250,250,250);
     border-radius: 5px;
+    box-shadow: 50px gray;
     margin:10px;
     text-align: center;
     opacity:0;
