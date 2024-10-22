@@ -1,3 +1,195 @@
 body{
     background-color: beige;
 }
+
+p{
+    text-align: center;
+}
+/* 
+#toggle1, #toggle2, #toggle3, #toggle4{
+    display:none;
+}
+
+#box{
+    display: flex;
+    flex-direction: row;
+    width:auto;
+    height:1100px;
+    border: 1px solid rgb(45, 61, 45);
+    margin:80px;
+}
+
+.one, .two, .three, .four{
+    border:1px solid rgb(45, 61, 45);
+    height:100px;
+    background-color: rgb(205, 205, 205);
+    border-radius: 5px;
+    margin:10px;
+    text-align: center;
+    opacity:0;
+    transition:opacity 0.3s ease;
+    visibility: hidden;
+}
+
+#toggle1:not(:checked) + label.one{
+    opacity: 1;
+    visibility: visible;
+}
+
+#toggle1:checked +label.one + div.two {
+    opacity: 1;
+    visibility: visible;
+}
+
+#toggle2:checked + label + div.three {
+    opacity: 1;
+    visibility: visible;
+}
+
+#toggle3:checked + label + div.four {
+    opacity: 1;
+    visibility: visible;
+} */
+
+#toggle1, #toggle2, #toggle3, #toggle4{
+    display:none;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    width:1000px;
+    height:1100px;
+    border: 1px dotted rgb(119, 150, 119);
+    margin:0 auto;
+    padding:5px;
+}
+
+.one{
+
+    border:5px solid rgb(80, 122, 80);
+    width:240px;
+    height:200px;
+    background-color: rgb(250,250,250);
+    border-radius: 5px;
+    margin:10px;
+    text-align: center;
+    opacity:0;
+    transition:opacity 0.3s ease;
+    visibility: hidden;
+}
+.oned{
+/* description in the middle */
+    border:5px solid rgb(80, 122, 80);
+    width:480px;
+    height:200px;
+    background-color: rgb(250,250,250);
+    border-radius: 5px;
+    margin:10px;
+    text-align: center;
+    opacity:0;
+    transition:opacity 0.3s ease;
+    visibility: hidden;
+}
+
+.two{
+
+    border:5px solid rgb(80, 122, 80);
+    width:480px;
+    height:200px;
+    background-color: rgb(250,250,250);
+    border-radius: 5px;
+    margin:10px;
+    text-align: center;
+    opacity:0;
+    transition:opacity 0.3s ease;
+    visibility: hidden;
+}
+.twod{
+
+    border:5px solid rgb(80, 122, 80);
+    width:480px;
+    height:200px;
+    background-color: rgb(250,250,250);
+    border-radius: 5px;
+    margin:10px;
+    text-align: center;
+    opacity:0;
+    transition:opacity 0.3s ease;
+    visibility: hidden;
+}
+
+.three{
+
+    border:5px solid rgb(80, 122, 80);
+    width:240px;
+    height:200px;
+    background-color: rgb(250,250,250);
+    border-radius: 5px;
+    margin:10px;
+    text-align: center;
+    opacity:0;
+    transition:opacity 0.3s ease;
+    visibility: hidden;
+}
+
+.threed{
+
+    border:5px solid rgb(80, 122, 80);
+    width:480px;
+    height:200px;
+    background-color: rgb(250,250,250);
+    border-radius: 5px;
+    margin:10px;
+    text-align: center;
+    opacity:0;
+    transition:opacity 0.3s ease;
+    visibility: hidden;
+}
+
+.four{
+    flex-wrap: wrap;
+    border:5px solid rgb(80, 122, 80);
+    width:240px;
+    height:200px;
+    background-color: rgb(250,250,250);
+    border-radius: 5px;
+    margin:10px;
+    text-align: center;
+    opacity:0;
+    transition:opacity 0.3s ease;
+    visibility: hidden;
+}
+.fourd{
+
+    border:5px solid rgb(80, 122, 80);
+    width:480px;
+    height:200px;
+    background-color: rgb(250,250,250);
+    border-radius: 5px;
+    margin:10px;
+    text-align: center;
+    opacity:0;
+    transition:opacity 0.3s ease;
+    visibility: hidden;
+}
+
+#toggle1:not(:checked) + .box .one{
+    opacity: 1;
+    visibility: visible;
+}
+
+#toggle1:checked ~ .box input#toggle2:not(:checked) + .two {
+    opacity: 1;
+    visibility: visible;
+}
+
+#toggle2:checked ~ .box input#toggle3:not(:checked) + .three{
+    opacity:1;
+    visibility: visible;
+}
+
+#toggle3:checked ~ .four{
+    opacity:1;
+    visibility: visible;
+}
