@@ -1,6 +1,15 @@
-var button1 = document.querySelector("button");
-button1.addEventListener("click", function() {
+// var button1 = document.querySelector("button");
+// button1.addEventListener("click", function() {
 
-    document.body.classList.toggle("oned");
+//     document.body.classList.toggle("oned");
 
-});
+// });
+
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
