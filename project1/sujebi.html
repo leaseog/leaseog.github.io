@@ -10,50 +10,69 @@
     
     <body>
         <div class="box">
-            <div class="header" style="text-align: center;">
-                recipes game
-                <br><br>
-                click each step to see what to do next!
-                <br>
-                <a href="index.html">umm let's go back</a>
-            </div>
-        
-            <div class="one">
-                <button class="button1" onclick="show(img)">.</button>
-            </div>
+        <div class="header" style="text-align: center;">
+            Recipes Game
+            <br><br>
+            Click each step to see what to do next!
+            <br>
+            <a href="index.html">Umm let's go back</a>
+        </div>
 
-            <div class="two">
-                <button class="button2" onclick="alert('You pressed the button!')">.</button>
-            </div>
+        <div class="one">
+            <button class="button1" onclick="showImage('./images/seaweed1.png', 'dried seaweed, chicken breast, soy sauce')">Ingredients Preparation</button>
+        </div>
 
-            <div class="three">
-                <button class="button3" onclick="alert('You pressed the button!')">.</button>
-            </div>
+        <div class="two">
+            <button class="button2" onclick="showImage('./images/seaweed2.png', 'prepare dried seaweed by soaking it in the water for at least 20 minutes, start with small amount of dried seaweed. it can be almost doubled up the size')">Prep Seaweed</button>
+        </div>
 
-            <div class="four">
-                <button class="button4" onclick="alert('You pressed the button!')">.</button>
-            </div>
+        <div class="three">
+            <button class="button3" onclick="showImage('./images/seaweed3.png', 'rinse chicken breast meat. cut into half to cook it faster. make sure you cut out all the fat.')">Prep Chicken Breast</button>
+        </div>
 
-            <div class="five">
-            </div>
+        <div class="four">
+            <button class="button8" onclick="showImage('./images/seaweed8.png', 'once it boils up, put it in a bowl and top it with the chicken breast meat enjoy it with rice and kimchi on the side!')">Enjoy</button>
+        </div>
 
-            <div class="six">
-                <button class="button6" onclick="alert('You pressed the button!')">.</button>
-            </div>
+        <div class="five" id="image-container">
+            <!-- Initially empty container to hold images and text -->
+        </div>
 
-            <div class="seven">
-                <button class="button7" onclick="alert('You pressed the button!')">.</button>
-            </div>
+        <div class="six">
+            <button class="button4" onclick="showImage('./images/seaweed4.png', 'put water and clean chicken breast into the pot. put enough water to cover the chicken completely. boil it for about 12-15 minutes')">Boil Chicken Breast</button>
+        </div>
 
-            <div class="eight">
-                <button class="button8" onclick="alert('You pressed the button!')">.</button>
-            </div>
+        <div class="seven">
+            <button class="button7" onclick="showImage('./images/seaweed7.png', 'let it boil for 2-3 minutes')">Let it Boil</button>
+        </div>
 
-            <div class="nine">
-                <button class="button9" onclick="alert('You pressed the button!')">.</button>
-            </div>
-          </div>
+        <div class="eight">
+            <button class="button6" onclick="showImage('./images/seaweed6.png', 'put 불려놓은 미역 in the pot and one spoon of soy sauce')">Add Prepared Ingredients</button>
+        </div>
 
-    </body>
+        <div class="nine">
+            <button class="button5" onclick="showImage('./images/seaweed5.png', 'take chicken breast out, and 잘게 찢는다')">Secure Chicken Breast</button>
+        </div>
+    </div>
+
+    <script>
+        function showImage(src, text) {
+            const imageContainer = document.getElementById("image-container");
+            imageContainer.innerHTML = ""; // Clear previous content
+            
+            const img = document.createElement("img");
+            img.src = src;
+            img.width = 150;
+            img.style.height = "auto";
+
+            const textNode = document.createElement("p");
+            textNode.textContent = text;
+
+            imageContainer.appendChild(img);
+            imageContainer.appendChild(textNode);
+        }
+    </script>
+</body>
+
         
 </html>

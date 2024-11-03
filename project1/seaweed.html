@@ -7,103 +7,132 @@
         
 
     </head>
-<!--     
-    <div class="header" style="text-align: center;">
-        recipes game
-        <br><br>
-        click each step to see what to do next!
-        <br>
-        <a href="index.html">umm let's go back</a></div> -->
 
-        <body>
+    <body>
+        <div class="box">
+            <div class="header" style="text-align: center;">
+                Recipes Game
+                <br><br>
+                Click each step to see what to do next!
+                <br>
+                <a href="index.html">Umm let's go back</a>
+            </div>
+    
+            <div class="one">
+                <button class="button1" onclick="showImage('./images/seaweed1.png', 'dried seaweed, chicken breast, soy sauce')">Ingredients Preparation</button>
+            </div>
+    
+            <div class="two">
+                <button class="button2" onclick="showImage('./images/seaweed2.png', 'prepare dried seaweed by soaking it in the water for at least 20 minutes, start with small amount of dried seaweed. it can be almost doubled up the size')">Prep Seaweed</button>
+            </div>
+    
+            <div class="three">
+                <button class="button3" onclick="showImage('./images/seaweed3.png', 'rinse chicken breast meat. cut into half to cook it faster. make sure you cut out all the fat.')">Prep Chicken Breast</button>
+            </div>
+    
+            <div class="four">
+                <button class="button8" onclick="showImage('./images/seaweed8.png', 'once it boils up, put it in a bowl and top it with the chicken breast meat enjoy it with rice and kimchi on the side!')">Enjoy</button>
+            </div>
+    
+            <div class="five" id="image-container">
+                <!-- Initially empty container to hold images and text -->
+            </div>
+    
+            <div class="six">
+                <button class="button4" onclick="showImage('./images/seaweed4.png', 'put water and clean chicken breast into the pot. put enough water to cover the chicken completely. boil it for about 12-15 minutes')">Boil Chicken Breast</button>
+            </div>
+    
+            <div class="seven">
+                <button class="button7" onclick="showImage('./images/seaweed7.png', 'let it boil for 2-3 minutes')">Let it Boil</button>
+            </div>
+    
+            <div class="eight">
+                <button class="button6" onclick="showImage('./images/seaweed6.png', 'put 불려놓은 미역 in the pot and one spoon of soy sauce')">Add Prepared Ingredients</button>
+            </div>
+    
+            <div class="nine">
+                <button class="button5" onclick="showImage('./images/seaweed5.png', 'take chicken breast out, and 잘게 찢는다')">Secure Chicken Breast</button>
+            </div>
+        </div>
+    
+        <script>
+            function showImage(src, text) {
+                const imageContainer = document.getElementById("image-container");
+                imageContainer.innerHTML = ""; // Clear previous content
+                
+                const img = document.createElement("img");
+                img.src = src;
+                img.width = 150;
+                img.style.height = "auto";
+    
+                const textNode = document.createElement("p");
+                textNode.textContent = text;
+    
+                imageContainer.appendChild(img);
+                imageContainer.appendChild(textNode);
+            }
+        </script>
+    </body>
+    
+        <!-- <body>
             <div class="box">
                 <div class="header" style="text-align: center;">
-                    recipes game
+                    Recipes Game
                     <br><br>
-                    click each step to see what to do next!
+                    Click each step to see what to do next!
                     <br>
-                    <a href="index.html">umm let's go back</a>
+                    <a href="index.html">Umm let's go back</a>
                 </div>
             
                 <div class="one">
-                    <button class="button1" onclick="show(img)">ingredients preperation</button>
-                    <script>
-                            var img = document.createElement("img");
-                            img.src="./images/seaweed1.png";
-                             width="150px";
-                              height="auto";
-                            var src = document.getElementById("header");
-                            src.appendChild(img);
-                    </script>
+                    <button class="button1" onclick="showImage('./images/seaweed1.png')">Ingredients Preparation</button>
                 </div>
-
+            
                 <div class="two">
-                    <button class="button2" onclick="alert('contents coming')">prep seaweed</button>
+                    <button class="button2" onclick="showImage('./images/seaweed2.png')">Prep Seaweed</button>
                 </div>
-
+            
                 <div class="three">
-                    <button class="button3" onclick="alert('You pressed the button!')">prep chicken breast</button>
+                    <button class="button3" onclick="showImage('./images/seaweed3.png')">Prep Chicken Breast</button>
                 </div>
-
+            
                 <div class="four">
-                    <button class="button4" onclick="alert('You pressed the button!')">enjoy</button>
+                    <button class="button4" onclick="showImage('./images/seaweed7.png')">Enjoy</button>
                 </div>
-
-                <div class="five">dried seaweed, chicken breast, soy sauce
+            
+                <div class="five" id="image-container">
+                    Dried seaweed, chicken breast, soy sauce
                     <br><br>
-                    <img src="./images/seaweed1.png" width="150px" height="auto">
-
-                   <!-- <img src="./images/seaweed2.png" width="150px" height="auto">
-                    <img src="./images/seaweed3.png" width="150px" height="auto">
-                    <img src="./images/seaweed3.png" width="150px" height="auto">
-                    <img src="./images/seaweed4.png" width="150px" height="auto">
-                    <img src="./images/seaweed5.png" width="150px" height="auto">
-                    <img src="./images/seaweed6.png" width="150px" height="auto">
-                    <img src="./images/seaweed7.png" width="150px" height="auto"> -->
                 </div>
-
+            
                 <div class="six">
-                    <button class="button6" onclick="alert('You pressed the button!')">boil chicken breast</button>
+                    <button class="button6" onclick="showImage('./images/seaweed4.png')">Boil Chicken Breast</button>
                 </div>
-
+            
                 <div class="seven">
-                    <button class="button7" onclick="alert('You pressed the button!')">let it boil</button>
+                    <button class="button7" onclick="showImage('./images/seaweed6_1.png')">Let it Boil</button>
                 </div>
-
+            
                 <div class="eight">
-                    <button class="button8" onclick="alert('You pressed the button!')">add preped ingredients</button>
+                    <button class="button8" onclick="showImage('./images/seaweed6.png')">Add Prepared Ingredients</button>
                 </div>
-
+            
                 <div class="nine">
-                    <button class="button9" onclick="alert('You pressed the button!')">secure chicken breast</button>
+                    <button class="button9" onclick="showImage('./images/seaweed5.png')">Secure Chicken Breast</button>
                 </div>
-              </div>
-<!--               
-        <input type="checkbox" id="toggle1">
-        <div class="box">
-            <label for="toggle1" class="one">One</label>
-            <input type="checkbox" id="toggle2">
-            <div class="two">
-                <label for="toggle2">Two</label>
-                <input type="checkbox" id="toggle3">
-            <div class="three">
-                <label for="toggle3">Three</label>
-                <input type="checkbox" id="toggle4">
-            <div class="four">
-                <label for="toggle4">Four</label>
-        </div>
-    </div>
-</div>
-    </div> -->
-<!--     
-<div class="box">
-    <button>
-        <div class="one"></div>
-    </button>
-    <script src="game.js"></script>
-</div> -->
-    
-
-    </body>
+            </div>
+            
+            <script>
+                function showImage(src) {
+                    const imageContainer = document.getElementById("image-container");
+                    imageContainer.innerHTML = "Dried seaweed, chicken breast, soy sauce<br><br>"; // Reset text
+                    const img = document.createElement("img");
+                    img.src = src;
+                    img.width = 150;
+                    img.style.height = "auto";
+                    imageContainer.appendChild(img);
+                }
+            </script>
+    </body> -->
         
 </html>
