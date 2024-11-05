@@ -1,10 +1,3 @@
-// var button1 = document.querySelector("button");
-// button1.addEventListener("click", function() {
-
-//     document.body.classList.toggle("oned");
-
-// });
-
 function myFunction() {
     var x = document.getElementById("myDIV");
     if (x.style.display === "none") {
