@@ -11,27 +11,27 @@
     <body>
         <div class="box">
         <div class="header" style="text-align: center;">
-            Recipes Game
+            Let's cook Grilled Eggplant over Rice!
             <br><br>
             Click each step to see what to do next!
             <br>
-            <a href="index.html">Umm let's go back</a>
+            <a href="index.html" style="font-size: small;">Umm let's go back</a>
         </div>
 
         <div class="one">
-            <button class="button1" onclick="showImage('./images/seaweed1.png', 'dried seaweed, chicken breast, soy sauce')">Ingredients Preparation</button>
+            <button class="button1" onclick="showImage('./images/seaweed1.png', 'eggplant, bean paste, soy sauce, sliced chili pepper, green onion, and water')">Ingredients Preparation</button>
         </div>
 
         <div class="two">
-            <button class="button2" onclick="showImage('./images/seaweed2.png', 'prepare dried seaweed by soaking it in the water for at least 20 minutes, start with small amount of dried seaweed. it can be almost doubled up the size')">Prep Seaweed</button>
+            <button class="button2" onclick="showImage('./images/seaweed2.png', 'rinse the eggplant well and slice it in small pieces')">Prep Eggplant</button>
         </div>
 
         <div class="three">
-            <button class="button3" onclick="showImage('./images/seaweed3.png', 'rinse chicken breast meat. cut into half to cook it faster. make sure you cut out all the fat.')">Prep Chicken Breast</button>
+            <button class="button3" onclick="showImage('./images/seaweed3.png', 'grill them on the heated pan with olive oil ')">Prepare the Pan</button>
         </div>
 
         <div class="four">
-            <button class="button8" onclick="showImage('./images/seaweed8.png', 'once it boils up, put it in a bowl and top it with the chicken breast meat enjoy it with rice and kimchi on the side!')">Enjoy</button>
+            <button class="button8" onclick="showImage('./images/seaweed8.png', 'done!')">Enjoy</button>
         </div>
 
         <div class="five" id="image-container">
@@ -39,21 +39,127 @@
         </div>
 
         <div class="six">
-            <button class="button4" onclick="showImage('./images/seaweed4.png', 'put water and clean chicken breast into the pot. put enough water to cover the chicken completely. boil it for about 12-15 minutes')">Boil Chicken Breast</button>
+            <button class="button4" onclick="showImage('./images/seaweed4.png', 'make sauce with 1 bean paste, 1/2 say sauce, sliced chili pepper, green onion, and 3 water.')">Make Sauce</button>
         </div>
 
         <div class="seven">
-            <button class="button7" onclick="showImage('./images/seaweed7.png', 'let it boil for 2-3 minutes')">Let it Boil</button>
+            <button class="button7" onclick="showImage('./images/seaweed7.png', 'put them over the steamed rice and maybe sunny side up egg? yumm!')">Any side dishes could be served with</button>
         </div>
 
         <div class="eight">
-            <button class="button6" onclick="showImage('./images/seaweed6.png', 'put 불려놓은 미역 in the pot and one spoon of soy sauce')">Add Prepared Ingredients</button>
+            <button class="button6" onclick="showImage('./images/seaweed6.png', 'when the sauce started getting thicker, turn the heat off and let it be done with the remaining heat')">Final Touch on the Pan</button>
         </div>
 
         <div class="nine">
-            <button class="button5" onclick="showImage('./images/seaweed5.png', 'take chicken breast out, and 잘게 찢는다')">Secure Chicken Breast</button>
+            <button class="button5" onclick="showImage('./images/seaweed5.png', 'once they are well grilled, put the sauce on them evenly.')">Seasoning Them with the Sauce</button>
         </div>
     </div>
+
+    <style>
+        .one{
+        border:20px solid rgb(86, 47, 117);
+        border-right:20px solid rgb(250,250,250);
+        width:240px;
+        height:200px;
+        background-color: rgb(250,250,250);
+        border-radius: 10px;
+        box-shadow: 50px gray;
+        margin:10px;
+        text-align: center;
+        }
+
+        .two{
+        border:20px solid rgb(86, 47, 117);
+        border-right:20px solid rgb(250,250,250);
+        border-left:20px solid rgb(250,250,250);
+        width:480px;
+        height:200px;
+        background-color: rgb(250,250,250);
+        border-radius: 5px;
+        margin:10px;
+        text-align: center;
+        }
+
+        .three{
+        border:20px solid rgb(86, 47, 117);
+        border-bottom:20px solid rgb(250,250,250);
+        border-left:20px solid rgb(250,250,250);
+        width:240px;
+        height:200px;
+        background-color: rgb(250,250,250);
+        border-radius: 5px;
+        margin:10px;
+        text-align: center;
+        }
+
+        .four{
+        border:20px solid rgb(86, 47, 117);
+        border-bottom:20px solid rgb(250,250,250);
+        width:240px;
+        height:200px;
+        background-color: rgb(250,250,250);
+        border-radius: 5px;
+        margin:10px;
+        text-align: center;
+        }
+
+        .five{
+        border:20px solid rgb(250,250,250);
+        border-right:20px solid rgb(250,250,250);
+        border-left:20px solid rgb(250,250,250);
+        width:480px;
+        height:200px;
+        background-color: rgb(250,250,250);
+        border-radius: 5px;
+        margin:10px;
+        text-align: center;
+        }
+
+        .six{
+        border:20px solid rgb(86, 47, 117);
+        border-top:20px solid rgb(250,250,250);
+        border-bottom:20px solid rgb(250,250,250);
+        width:240px;
+        height:200px;
+        background-color: rgb(250,250,250);
+        border-radius: 5px;
+        margin:10px;
+        text-align: center;
+        }
+        .seven{
+        border:20px solid rgb(86, 47, 117);
+        border-right:20px solid rgb(250,250,250);
+        border-top:20px solid rgb(250,250,250);
+        width:240px;
+        height:200px;
+        background-color: rgb(250,250,250);
+        border-radius: 5px;
+        margin:10px;
+        text-align: center;
+        }
+        .eight{
+        border:20px solid rgb(86, 47, 117);
+        border-right:20px solid rgb(250,250,250);
+        border-left:20px solid rgb(250,250,250);
+        width:480px;
+        height:200px;
+        background-color: rgb(250,250,250);
+        border-radius: 5px;
+        margin:10px;
+        text-align: center;
+        }
+        .nine{
+        border:20px solid rgb(86, 47, 117);
+        border-top:20px solid rgb(250,250,250);
+        border-left:20px solid rgb(250,250,250);
+        width:240px;
+        height:200px;
+        background-color: rgb(250,250,250);
+        border-radius: 5px;
+        margin:10px;
+        text-align: center;
+        }
+    </style>
 
     <script>
         function showImage(src, text) {

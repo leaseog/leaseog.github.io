@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>recipes!</title>
+        <link rel="stylesheet" href="https://use.typekit.net/qpr1xim.css">
+        <link rel="stylesheet" href="style.css">
+        
+
+    </head>
+   
+    <body>
+        <div class="box">
+        <div class="header" style="text-align: center;">
+            Let's cook Suyuk - Boiled Pork!
+            <br><br>
+            Click each step to see what to do next!
+            <br>
+            <a href="index.html" style="font-size: small;">Umm let's go back</a>
+        </div>
+
+        <div class="one">
+            <button class="button1" onclick="showImage('./images/seaweed1.png', 'pork shoulder or butt, bean paste, whole pepper, onion, green onion, whole garlic, rice wine')">Ingredients Preparation</button>
+        </div>
+
+        <div class="two">
+            <button class="button2" onclick="showImage('./images/seaweed2.png', 'put water, 1 onion, 1-2 green onion, rice wine, 1 spoon of bean paste, whole peppers, and whole garlic in a pot and boil it')">Prep Soup</button>
+        </div>
+
+        <div class="three">
+            <button class="button3" onclick="showImage('./images/seaweed3.png', 'make a sheath on the pork and cut them in a proper size for faster cooking time')">Prep Pork</button>
+        </div>
+
+        <div class="four">
+            <button class="button8" onclick="showImage('./images/seaweed8.png', 'done!')">Enjoy</button>
+        </div>
+
+        <div class="five" id="image-container">
+            <!-- Initially empty container to hold images and text -->
+        </div>
+
+        <div class="six">
+            <button class="button4" onclick="showImage('./images/seaweed4.png', 'put pork in the pot and make sure the water is covering the pork completely')">Prep Boiling</button>
+        </div>
+
+        <div class="seven">
+            <button class="button7" onclick="showImage('./images/seaweed7.png', 'Have it with ssam, steamed rice and Kimchi')">Ready to eat with Ssam</button>
+        </div>
+
+        <div class="eight">
+            <button class="button6" onclick="showImage('./images/seaweed6.png', 'take pork out and slice it in nice shape')">Cut it nice and even</button>
+        </div>
+
+        <div class="nine">
+            <button class="button5" onclick="showImage('./images/seaweed5.png', 'let it boil for 20 minutes with high heat and another hour with lower heat')">Let it boil !!</button>
+        </div>
+    </div>
+
+          <style>
+            .one{
+            border:20px solid rgb(214, 160, 187);
+            border-right:20px solid rgb(250,250,250);
+            width:240px;
+            height:200px;
+            background-color: rgb(250,250,250);
+            border-radius: 10px;
+            box-shadow: 50px gray;
+            margin:10px;
+            text-align: center;
+            }
+    
+            .two{
+            border:20px solid rgb(214, 160, 187);
+            border-right:20px solid rgb(250,250,250);
+            border-left:20px solid rgb(250,250,250);
+            width:480px;
+            height:200px;
+            background-color: rgb(250,250,250);
+            border-radius: 5px;
+            margin:10px;
+            text-align: center;
+            }
+    
+            .three{
+            border:20px solid rgb(214, 160, 187);
+            border-bottom:20px solid rgb(250,250,250);
+            border-left:20px solid rgb(250,250,250);
+            width:240px;
+            height:200px;
+            background-color: rgb(250,250,250);
+            border-radius: 5px;
+            margin:10px;
+            text-align: center;
+            }
+    
+            .four{
+            border:20px solid rgb(214, 160, 187);
+            border-bottom:20px solid rgb(250,250,250);
+            width:240px;
+            height:200px;
+            background-color: rgb(250,250,250);
+            border-radius: 5px;
+            margin:10px;
+            text-align: center;
+            }
+    
+            .five{
+            border:20px solid rgb(250,250,250);
+            border-right:20px solid rgb(250,250,250);
+            border-left:20px solid rgb(250,250,250);
+            width:480px;
+            height:200px;
+            background-color: rgb(250,250,250);
+            border-radius: 5px;
+            margin:10px;
+            text-align: center;
+            }
+    
+            .six{
+            border:20px solid rgb(214, 160, 187);
+            border-top:20px solid rgb(250,250,250);
+            border-bottom:20px solid rgb(250,250,250);
+            width:240px;
+            height:200px;
+            background-color: rgb(250,250,250);
+            border-radius: 5px;
+            margin:10px;
+            text-align: center;
+            }
+            .seven{
+            border:20px solid rgb(214, 160, 187);
+            border-right:20px solid rgb(250,250,250);
+            border-top:20px solid rgb(250,250,250);
+            width:240px;
+            height:200px;
+            background-color: rgb(250,250,250);
+            border-radius: 5px;
+            margin:10px;
+            text-align: center;
+            }
+            .eight{
+            border:20px solid rgb(214, 160, 187);
+            border-right:20px solid rgb(250,250,250);
+            border-left:20px solid rgb(250,250,250);
+            width:480px;
+            height:200px;
+            background-color: rgb(250,250,250);
+            border-radius: 5px;
+            margin:10px;
+            text-align: center;
+            }
+            .nine{
+            border:20px solid rgb(214, 160, 187);
+            border-top:20px solid rgb(250,250,250);
+            border-left:20px solid rgb(250,250,250);
+            width:240px;
+            height:200px;
+            background-color: rgb(250,250,250);
+            border-radius: 5px;
+            margin:10px;
+            text-align: center;
+            }
+        </style>
+        
+        
+        <script>
+            function showImage(src, text) {
+                const imageContainer = document.getElementById("image-container");
+                imageContainer.innerHTML = ""; // Clear previous content
+                
+                const img = document.createElement("img");
+                img.src = src;
+                img.width = 150;
+                img.style.height = "auto";
+    
+                const textNode = document.createElement("p");
+                textNode.textContent = text;
+    
+                imageContainer.appendChild(img);
+                imageContainer.appendChild(textNode);
+            }
+        </script>
+    </body>
+        
+</html>
