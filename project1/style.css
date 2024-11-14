@@ -1,5 +1,8 @@
 body{
-    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/background.jpeg);
+    background-size: contain;
     scroll-margin: 20px;
     text-align: center;
     font-family: "grenadine-mvb", sans-serif;
@@ -17,7 +20,7 @@ h1{
 
 .header{
     /* display: absolute; */
-    width: 1050px;
+    /* width: 1050px; */
     height: 100px;
     background-color: white;
     margin: 10px;
@@ -78,6 +81,7 @@ h1{
     /* border: 1px dotted rgb(119, 150, 119); */
     margin:0 auto;
     padding:5px;
+    justify-content: center;
 }
 
 #bigcontainer{
@@ -97,10 +101,14 @@ h1{
     height: 200px;
     top:30%;
     background-color: rgb(214, 205, 176);
+    background-image: url(./images/cardsbg.jpeg);
+    background-size: cover;
     margin: 10px;
     padding: 5px;
+    padding-top: 50px;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 2px 2px 2px 2px gray;
 }
 
 .cardcontent-nst.cards{
