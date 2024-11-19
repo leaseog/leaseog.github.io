@@ -71,21 +71,16 @@ h1{
 
 .box{
     display: grid;
-    /* flex-direction: row; */
-    /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-  /* grid-auto-rows: auto; */
     width:800px;
     height:750px;
-    /* border: 1px dotted rgb(119, 150, 119); */
     margin:0 auto;
     padding:5px;
     justify-content: center;
 }
 
 #bigcontainer{
-    /* position:absolute; */
     display: flex;
     flex-direction: row;
     width:800px;
