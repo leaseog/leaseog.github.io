@@ -49,9 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const viewportHeight = window.innerHeight;
 
         const imgWidth = viewportWidth * 0.2; // 50% of the viewport width
-        const imgHeight = imgWidth * (150 / 120); // Maintain aspect ratio
-        img.style.width = `${120}px`;
-        img.style.height = `${150}px`;
+        const imgHeight = imgWidth; // Maintain aspect ratio
+        img.style.width = `${300}px`;
+        // img.style.height = `${auto}px`;
 
           // Generate position without overlapping
           let top, left;
