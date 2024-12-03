@@ -449,7 +449,11 @@
     left: 80px;
 }
 
-.a4s2:nth-child(2){
+.a4s1:hover{
+    box-shadow: 50px 10px pink;
+}
+
+.a4s2{
     width:70px;
     height: 70px;
     border-radius: 50px 50px 50px 50px;
@@ -460,7 +464,7 @@
     left: 180px;
 }
 
-.a4s3:nth-child(3){
+.a4s3{
     width:70px;
     height: 70px;
     border-radius: 50px 50px 50px 50px;
@@ -470,15 +474,28 @@
     top: 130px;
     left: 180px;
 }
+@keyframes movieSkew {
+    0% {
+          transform:  translateY(0);  
+    }
+    50% {
+      transform: translateY(50px) skewX(5deg);
+    }
+    100% {
+      transform:translateY(100px) skewY(-10deg);
+    }  
+  }
+
 .a4s3:hover{
-    color: white;
-    transform: translate(top 250px);
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in;
-    transition-delay: 0.2s;
+    animation-name: movieSkew;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 3;
+    animation-delay: 0s; 
+    animation-direction: normal;
 }
 
-.a4s4:nth-child(4){
+.a4s4{
     width:70px;
     height: 300px;
     border-radius: 0px 50px 0px 0px;
@@ -487,6 +504,10 @@
     box-shadow: 50px 10px rgb(0, 0, 255);
     top: 30px;
     left: 300px;
+}
+
+.a4s4:hover{
+    box-shadow: 50px 10px red;
 }
 
 
@@ -508,7 +529,7 @@
     left: 100px;
 }
 
-.a5s2:nth-child(2){
+.a5s2{
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -518,7 +539,7 @@
     left: 205px;
 }
 
-.a5s3:nth-child(3){
+.a5s3{
     width:180px;
     height: 180px;
     border-radius: 50px 50px 0px 0px;
@@ -538,8 +559,17 @@
       background-color: orange;
     }
     100% {
-      transform: scale(1.5);
+      transform: scale(1);
       background-color: yellow;
     }
   }
+
+.a5s2:hover{
+    animation-name: stretch;
+    animation-duration:1s;
+    animation-timing-function: ease-in-out;
+    animation-delay:0s;
+    animation-iteration-count: 3;
+    animation-direction: normal;    
+}
   
