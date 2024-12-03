@@ -1,43 +1,29 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const imageContainer = document.getElementById("container");
+// Get the timer element
+const timerElement = document.getElementById('timer');
 
-    // Validate the container
-    if (!imageContainer) {
-        console.error("Container element not found!");
-        return;
-    }
+// Initialize variables
+let secondsElapsed = 0;
+const maxSeconds = 20 * 60; // 20 minutes in seconds
 
-    // Images to show
-    const images = [
-        "./image/timeout.png", // You can change this to your desired image
-    ];
+// Function to format time (mm:ss)
+function formatTime(seconds) {
+  const minutes = Math.floor(seconds / 60);
+  const secondsPart = seconds % 60;
+  return `${String(minutes).padStart(2, '0')}:${String(secondsPart).padStart(2, '0')}`;
+}
 
-    // Function to display the image at the center
-    function displayCenteredImage() {
-        console.log("Attempting to display the image in the center of the container");
+// Function to update the timer
+function updateTimer() {
+  if (secondsElapsed < maxSeconds) {
+    secondsElapsed++;
+    timerElement.textContent = `${formatTime(secondsElapsed)}`;
+  } else {
+    clearInterval(timerInterval); // Stop the timer after 20 minutes
+    timerElement.textContent = '20:00 (Time is up!)';
+  }
+}
 
-        const src = images[0]; // Use the first image or randomize if needed
+// Start the timer and update every second
+const timerInterval = setInterval(updateTimer, 1000);
 
-        const img = document.createElement("img");
-        img.src = src;
-        img.alt = "Centered Image";
-        img.style.position = "absolute";
-
-        // Make the image fit the size of the container
-        img.style.width = "100%";
-        img.style.height = "100%";
-        img.style.objectFit = "contain"; // Ensure the image retains its aspect ratio
-        img.style.top = "0";
-        img.style.left = "0";
-
-        // Append image to the container
-        imageContainer.appendChild(img);
-        console.log(`Image added: ${src}`);
-    }
-
-    // Show the image after 10 minutes
-    setTimeout(() => {
-        console.log("10 minutes passed. Showing the centered image...");
-        displayCenteredImage();
-    }, 10 * 60 * 1000); // 10 minutes in milliseconds
-});
+// alert('20 minutes have passed!');

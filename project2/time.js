@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { src: "./image/timeout.png", delay: 90 },   // 7m
     ];
 
+    const headerHeight = 70; // Height of the header in pixels
     const placedPositions = []; // To store the positions of placed images
 
       function isOverlapping(x, y, width, height) {
@@ -57,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
           let top, left;
           let maxAttempts = 100; // Avoid infinite loops
           do {
-            top = Math.random() * (window.innerHeight - imgHeight);
+            top = Math.random() * (window.innerHeight - imgHeight - headerHeight) + headerHeight;
             left = Math.random() * (window.innerWidth - imgWidth);
             maxAttempts--;
           } while (isOverlapping(left, top, imgWidth, imgHeight) && maxAttempts > 0);
