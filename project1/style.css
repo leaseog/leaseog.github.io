@@ -110,6 +110,12 @@ h1{
     text-align: warp;
 }
 
+.cards:active {
+    background-color: rgb(170, 163, 140);
+    box-shadow: 2.3px 2.3px 2.3px 2.3px rgb(55, 55, 55);
+    transform: translateY(4px);
+  }
+
 
 .one{
 
@@ -123,6 +129,7 @@ h1{
     margin:10px;
     text-align: center;
 }
+
 
 .two{
     border:20px solid rgb(80, 122, 80);
@@ -241,3 +248,5 @@ h1{
     font-weight: 400;
     font-style: normal;
 }
+
+
