@@ -3,24 +3,24 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Images to show
     const images = [
-      { src: "./image/sticker1.png", delay: 15 },    // 30s
-      { src: "./image/sticker2.png", delay: 20 },  // 1m
-      { src: "./image/sticker3.png", delay: 25 },   // 1m 30s
-      { src: "./image/sticker4.png", delay: 30 },   // 2m
-      { src: "./image/sticker5.png", delay: 35 },   // 2m 30s
-      { src: "./image/sticker6.png", delay: 40 },   // 3m
-      { src: "./image/sticker7.png", delay: 45 },   // 3m 30s 
-      { src: "./image/sticker6.png", delay: 50 },   // 4m  
-      { src: "./image/sticker1.png", delay: 55 },   // 4m 30s 
-      { src: "./image/sticker3.png", delay: 60 },   // 5m 
-      { src: "./image/sticker2.png", delay: 65 },   // 5m 30s 
-      { src: "./image/sticker6.png", delay: 75 },   // 6m 
-      { src: "./image/sticker4.png", delay: 80 },   // 6m 30s 
-      { src: "./image/sticker5.png", delay: 850 },   // 7m 
-      { src: "./image/timeout.png", delay: 90 },   // 7m
+      { src: "./image/sticker1.png", delay: 360 },    // 6m
+      { src: "./image/sticker2.png", delay: 420 },  // 7m
+      { src: "./image/sticker3.png", delay: 480 },   // 8m
+      { src: "./image/sticker4.png", delay: 540 },   // 9m
+      { src: "./image/sticker5.png", delay: 600 },   // 10m
+      { src: "./image/sticker6.png", delay: 660 },   // 11m
+      { src: "./image/sticker7.png", delay: 720 },   // 12m 
+      { src: "./image/sticker6.png", delay: 780 },   // 13m  
+      { src: "./image/sticker1.png", delay: 840 },   // 14m 
+      { src: "./image/sticker3.png", delay: 900 },   // 15m 
+      { src: "./image/sticker2.png", delay: 960 },   // 16m 
+      { src: "./image/sticker6.png", delay: 1020 },   // 17m 
+      { src: "./image/sticker4.png", delay: 1080 },   // 18m
+      { src: "./image/sticker5.png", delay: 1140 },   // 19m 
+      { src: "./image/timeout.png", delay: 1200 },   // 20m
     ];
 
-    const headerHeight = 70; // Height of the header in pixels
+    const headerHeight = 90; // Height of the header in pixels
     const placedPositions = []; // To store the positions of placed images
 
       function isOverlapping(x, y, width, height) {

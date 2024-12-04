@@ -39,7 +39,7 @@ p{
 
 #header{
     display: grid;
-    height: 50px;
+    height: 70px;
     columns: (1fr, 1fr, 1fr);
     align-items: (left, center, right);
     border-bottom: 1px solid black;
