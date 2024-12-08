@@ -2,7 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     background-image: url(./images/background.jpeg);
-    background-size: contain;
+    background-size: fill;
     scroll-margin: 20px;
     text-align: center;
     font-family: "grenadine-mvb", sans-serif;
@@ -93,7 +93,7 @@ h3{
     width:800px;
     height:750px;
     margin:0 auto;
-    padding:5px;
+    padding:20px;
     justify-content: center;
 }
 
